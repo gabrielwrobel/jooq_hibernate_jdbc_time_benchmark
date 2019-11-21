@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "DataModel" table = "data_model">
+
+        <meta attribute = "class-description">
+            This class contains the data_model detail.
+        </meta>
+
+        <id name = "id" type = "long" column = "id">
+            <generator class="native"/>
+        </id>
+
+        <property name = "value2" column = "s_value2" type = "string"/>
+        <property name = "value3" column = "s_value3" type = "string"/>
+        <property name = "value4" column = "s_value4" type = "string"/>
+        <property name = "value5" column = "s_value5" type = "string"/>
+        <property name = "value6" column = "s_value6" type = "string"/>
+        <property name = "value7" column = "s_value7" type = "string"/>
+        <property name = "tag" column = "tag" type = "string"/>
+
+
+    </class>
+</hibernate-mapping>
